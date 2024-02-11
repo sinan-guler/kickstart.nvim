@@ -43,6 +43,7 @@ P.S. You can delete this when you're done too. It's your config now :)
 --  NOTE: Must happen before plugins are required (otherwise wrong leader will be used)
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
+vim.api.nvim_set_keymap('n', '<leader>pv', ':Ex<CR>', { noremap = true, silent = true})
 vim.api.nvim_set_keymap('n', '<Up>', '<NOP>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<Down>', '<NOP>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<Left>', '<NOP>', { noremap = true, silent = true })
